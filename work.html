@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore featured frontend projects by Balkar Singh, including authentication flows, calculators, and responsive UI work.">
+    <meta name="theme-color" content="#050505">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="work.css">
-    <title>Work</title>
+    <title>Work | Balkar Singh</title>
 </head>
 
 <body>
@@ -17,7 +20,13 @@
                 <h2 class="nav-logo">Balkar Singh</h2>
             </a>
 
-            <ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
                 <li><a href="work.html" class="work">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -27,17 +36,58 @@
     </header>
 
     <div class="page-wrapper">
-
+        <main>
         <section class="project-section">
             <div class="section-header">
                 <h3>FEATURED PROJECTS</h3>
-                <p>Here are some of my recent projects:</p>
+                <p>Recent work focused on responsive layouts, interactivity, and practical frontend problem-solving.</p>
+            </div>
+
+            <!-- Extractify -->
+            <div class="project-item">
+                <div class="project-image">
+                    <a href="#" aria-label="Extractify project preview">
+                        <img src="imgs/extractify2.png" alt="Extractify PDF data extraction tool">
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <h3>Extractify</h3>
+
+                    <p>
+                        Extractify is a full-stack OCR-based application that extracts ordered person records from PDFs
+                        and images, then compares two documents to identify matching names. The system includes structured
+                        document parsing, CSV export, background processing for large files, and a responsive React
+                        interface.
+                    </p>
+
+                    <div class="project-info">
+                        <div class="info-row">
+                            <span>Year</span>
+                            <span>2026</span>
+                        </div>
+                        <div class="info-row">
+                            <span>Role</span>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <div class="info-row">
+                            <span>Technologies</span>
+                            <span>React, NestJS, MongoDB, Tesseract OCR</span>
+                        </div>
+                    </div>
+
+                    <p class="project-note">
+                        Built for supported structured layouts with strong accuracy on target formats. Comparison quality
+                        still depends on OCR clarity, scan quality, and document consistency.
+                    </p>
+                </div>
             </div>
 
             <!-- Authflow js -->
             <div class="project-item">
                 <div class="project-image">
-                    <a href="#">
+                    <a href="https://thedigitalbalkar.github.io/AuthFlow-JS/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Open AuthFlow JS live project">
                         <img src="imgs/Authflow js.png" alt="Authflow js">
                     </a>
                 </div>
@@ -64,12 +114,12 @@
                         </div>
                         <div class="info-row">
                             <span>Technologies</span>
-                            <span>HTML, CSS</span>
+                            <span>HTML, CSS, JavaScript</span>
                         </div>
                     </div>
 
-                    <a href="https://thedigitalbalkar.github.io/AuthFlow-JS/" target="_blank" class="project-link">
-                        CHECK ON GITHUB <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/thedigitalbalkar/AuthFlow-JS" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View GitHub <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
             </div>
@@ -77,7 +127,8 @@
             <!-- claculator -->
             <div class="project-item">
                 <div class="project-image">
-                    <a href="#" target="_blank">
+                    <a href="https://thedigitalbalkar.github.io/Calculator/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Open Universal Calculator live project">
                         <img src="imgs/Universal-calculator.png" alt="claculator">
                     </a>
                 </div>
@@ -87,8 +138,7 @@
 
                     <p>
                         A powerful, responsive calculator featuring Basic, Scientific, Financial (EMI), Graphing and
-                        Conversion tools with some themes and smooth interactions.<br>
-                        {Made with chat gpt}
+                        Conversion tools with multiple modes, theme options, and smooth interactions.
                     </p>
 
                     <div class="project-info">
@@ -102,20 +152,25 @@
                         </div>
                         <div class="info-row">
                             <span>Technologies</span>
-                            <span>HTML, CSS, JAVASCRIPT</span>
+                            <span>HTML, CSS, JavaScript</span>
                         </div>
                     </div>
 
-                    <a href="https://thedigitalbalkar.github.io/Calculator/" target="_blank" class="project-link">
-                        CHECK ON GITHUB <i class="fa-brands fa-github"></i>
-                    </a>
+                    <div class="project-links">
+                        <a href="https://thedigitalbalkar.github.io/Calculator/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/thedigitalbalkar/universal-claculator-mvp" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View GitHub <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- login form  -->
             <div class="project-item">
                 <div class="project-image">
-                    <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank">
+                    <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank" rel="noopener noreferrer">
                         <img src="imgs/loginform.png" alt="login form">
                     </a>
                 </div>
@@ -142,12 +197,13 @@
                         </div>
                     </div>
 
-                    <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank" class="project-link">
-                        CHECK ON GITHUB <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View GitHub <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
             </div>
         </section>
+        </main>
 
 
         <footer class="footer-section">
@@ -158,15 +214,16 @@
 
                         <h2>LET'S CONNECT</h2>
                         <p>Say hello to <a href="mailto:balkarsing2114@gmail.com">balkarsingh2114@gmail.com</a></p>
-                        <p>for more info, here's my <a href="Balkar singh.docx" download>CV</a></p>
+                        <p>for more info, here's my <a href="Balkar singh.docx" download>resume</a></p>
+                        <p>Open to junior frontend and freelance opportunities.</p>
 
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/thedigitalbalkar" target="_blank"><i
+                        <a href="https://github.com/thedigitalbalkar" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile"><i
                                 class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/balkar-s-643640198/" target="_blank"><i
+                        <a href="https://www.linkedin.com/in/balkar-s-643640198/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag==" target="_blank"><i
+                        <a href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag==" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile"><i
                                 class="fa-brands fa-instagram"></i></a>
                     </div>
 
@@ -200,12 +257,12 @@
                 </div>
 
             </div>
-            <div class="copyright">
-                <p>&copy;2025 BALKAR SINGH</p>
-            </div>
         </footer>
+        <div class="copyright">
+            <p>&copy;2026 Balkar Singh</p>
+        </div>
     </div>
 </body>
 
-
+<script src="script.js"></script>
 </html>
