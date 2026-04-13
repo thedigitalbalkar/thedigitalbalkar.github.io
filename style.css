@@ -134,7 +134,7 @@ header {
     position: relative;
 }
 
-.nav-section>a {
+.nav-section>a:first-child {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -156,11 +156,38 @@ header {
     padding-bottom: 4px;
 }
 
-.nav-section>ul {
+/* NAV RIGHT CONTAINER */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
+}
+
+.nav-links>li {
+    margin: 0 10px;
+}
+
+.nav-links>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: 'Bebas Neue', cursive;
+    transition: 0.2s ease;
+}
+
+.nav-links>li>a:hover {
+    color: #a8fd15;
+    border-bottom: 1px solid #a8fd15;
+    padding-bottom: 4px;
 }
 
 .nav-toggle {
@@ -183,25 +210,6 @@ header {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.nav-section>ul>li {
-    margin: 0 10px;
-
-}
-
-.nav-section>ul>li>a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    font-family: 'Bebas Neue', cursive;
-    transition: 0.2s ease;
-}
-
-.nav-section>ul>li>a:hover {
-    color: #a8fd15;
-    border-bottom: 1px solid #a8fd15;
-    padding-bottom: 4px;
-}
 
 .page-wrapper {
     animation: siteFade 1.2s ease forwards;
@@ -269,24 +277,25 @@ header {
     gap: 20px;
 }
 
-
-
-.btn {
+.btn1, .btn2 {
     position: relative;
     overflow: hidden;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
     gap: 12px;
-    padding: 10px 20px;
+    padding: 5px 15px;
+    height: 40px;
     background-color: #a8fd15;
-    color: black;
-    font-weight: 600;
+    color: #000;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 50px;
 }
 
-.btn-secondary {
+.nav-section .btn1-secondary {
     background-color: transparent;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -304,7 +313,7 @@ header {
 }
 
 /* Shine layer */
-.btn::before {
+.btn1::before, .btn2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -322,17 +331,17 @@ header {
 }
 
 /* Trigger shine on hover */
-.btn:hover::before {
+.btn1:hover::before, .btn2:hover::before {
     animation: shine 2.9s ease;
 }
 
-.btn:hover {
-    background-color: #a8fd15;
-    transform: translateY(-4px);
-    transition: 0.2s ease;
+.btn1:hover, .btn2:hover {
+    transform: translateZ(-10px);
+    transition: 0.3s ease;
+    color: #000;
 }
 
-.btn-secondary:hover {
+.nav-section .btn1-secondary:hover {
     color: #000;
 }
 
@@ -753,11 +762,11 @@ border-radius: 50%;
         font-size: 22px;
     }
 
-    .nav-section>ul {
+    .nav-links {
         gap: 12px;
     }
 
-    .nav-section>ul>li {
+    .nav-links>li {
         margin: 0;
     }
 
@@ -800,7 +809,12 @@ border-radius: 50%;
         display: inline-flex;
     }
 
-    .nav-section ul {
+    .nav-right {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .nav-links {
         display: none;
         width: min(50vw, 320px);
         gap: 10px;
@@ -821,25 +835,25 @@ border-radius: 50%;
         animation: navDropIn 0.28s ease forwards;
     }
 
-    .nav-section ul li {
+    .nav-links li {
         opacity: 0;
         transform: translateY(-6px);
         animation: navItemIn 0.3s ease forwards;
     }
 
-    .nav-section ul li:nth-child(1) {
+    .nav-links li:nth-child(1) {
         animation-delay: 0.05s;
     }
 
-    .nav-section ul li:nth-child(2) {
+    .nav-links li:nth-child(2) {
         animation-delay: 0.1s;
     }
 
-    .nav-section ul li:nth-child(3) {
+    .nav-links li:nth-child(3) {
         animation-delay: 0.15s;
     }
 
-    .nav-section ul li:nth-child(4) {
+    .nav-links li:nth-child(4) {
         animation-delay: 0.2s;
     }
 
@@ -883,7 +897,7 @@ border-radius: 50%;
         align-items: center;
     }
 
-    .btn {
+    .btn1, .btn2 {
         width: 100%;
         max-width: 280px;
         justify-content: center;
@@ -949,7 +963,7 @@ border-radius: 50%;
         transition-duration: 0.7s;
     }
 
-    .btn::before,
+    .btn1::before, .btn2::before,
     .social-icons i::before {
         animation-duration: 2.5s;
     }
@@ -1060,7 +1074,7 @@ border-radius: 50%;
         align-items: center;
     }
 
-    .nav-section ul {
+    .nav-links {
         padding: 14px 12px;
     }
 
@@ -1096,7 +1110,7 @@ border-radius: 50%;
         align-items: center;
     }
 
-    .btn {
+    .btn1, .btn2 {
         width: 100%;
         max-width: 240px;
         justify-content: center;
@@ -1174,7 +1188,7 @@ border-radius: 50%;
         transition-duration: 0.6s;
     }
 
-    .btn::before,
+    .nav-section .btn1::before,
     .social-icons i::before {
         animation-duration: 2.5s;
     }

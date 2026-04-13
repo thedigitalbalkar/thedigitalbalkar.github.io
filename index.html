@@ -1,278 +1,367 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Balkar Singh is a frontend developer building responsive websites and practical web interfaces with HTML, CSS, JavaScript, and WordPress.">
-    <meta name="theme-color" content="#050505">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Balkar Singh is a frontend developer building responsive websites and practical web interfaces with HTML, CSS, JavaScript, and WordPress."
+    />
+    <meta name="theme-color" content="#050505" />
     <title>Balkar Singh | Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- loader -->
     <div id="page-loader">
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <p>Loading...</p>
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p>Loading...</p>
     </div>
 
     <header>
-        <nav class="nav-section">
-            <a href="index.html">
-                <h2 class="nav-logo">Balkar Singh</h2>
-            </a>
+      <nav class="nav-section">
+        <a href="index.html">
+          <h2 class="nav-logo">Balkar Singh</h2>
+        </a>
 
-            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <div class="nav-right">
+          <a href="Balkar singh.docx" download class="btn1"
+            >My CV <i class="fa fa-download"></i
+          ></a>
+          <ul class="nav-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
-            <ul class="nav-links">
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
     </header>
 
     <div class="page-wrapper">
-        <main>
-            <section class="home-section">
-                <div class="section-content">
-                    <div class="home-text">
-                        <h1 class="split-text">Hi, I'm<br>Balkar Singh.</h1>
-                        <p>I’m a full-stack developer in practice, building responsive web applications with HTML, CSS, JavaScript, React, NestJS, Express, Node.js, MongoDB, and WordPress. My business background helps me turn ideas into practical digital experiences.</p>
-                        <div class="home-actions"> <a href="contact.html" class="btn">
-                                Contact Me <i class="fa fa-paper-plane"></i>
-                            </a>
-                            <div class="social-icons">
-                                <a href="https://github.com/thedigitalbalkar?tab=repositories" target="_blank"
-                                    rel="noopener noreferrer" aria-label="View Balkar Singh on GitHub"><i
-                                        class="fa-brands fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/balkar-s-643640198/" target="_blank"
-                                    rel="noopener noreferrer" aria-label="View Balkar Singh on LinkedIn"><i
-                                        class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag=="
-                                    target="_blank" rel="noopener noreferrer" aria-label="View Balkar Singh on Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-image">
-                        <img src="dp/DP.jpg" alt="Balkar Singh">
-                    </div>
+      <main>
+        <section class="home-section">
+          <div class="section-content">
+            <div class="home-text">
+              <h1 class="split-text">Hi, I'm<br />Balkar Singh.</h1>
+              <p>
+                I’m a full-stack developer in practice, building responsive web
+                applications with HTML, CSS, JavaScript, React, NestJS, Express,
+                Node.js, MongoDB, and WordPress. My business background helps me
+                turn ideas into practical digital experiences.
+              </p>
+              <div class="home-actions">
+                <a href="contact.html" class="btn2">
+                  Contact Me <i class="fa fa-paper-plane"></i>
+                </a>
+                <div class="social-icons">
+                  <a
+                    href="https://github.com/thedigitalbalkar?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Balkar Singh on GitHub"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/balkar-s-643640198/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Balkar Singh on LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Balkar Singh on Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
                 </div>
-            </section>
-
-            <section class="project-section">
-                <div class="section-header">
-                    <h3>FEATURED PROJECTS</h3>
-                    <p>Here are some of my recent projects:</p>
-                </div>
-
-                <!-- Extractify -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <a href="#" aria-label="Extractify project preview">
-                            <img src="imgs/Extractify2.png" alt="Extractify PDF data extraction tool">
-                        </a>
-                    </div>
-
-                    <div class="project-details">
-                        <h3>Extractify</h3>
-
-                        <p>
-                            Extractify is a full-stack OCR-based application that extracts ordered person records from PDFs
-                            and images, then compares two documents to identify matching names. It includes structured
-                            parsing, CSV export, background processing for large files, and a responsive interface for
-                            handling extraction workflows.
-                        </p>
-
-                        <div class="project-info">
-                            <div class="info-row">
-                                <span>Year</span>
-                                <span>2026</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Role</span>
-                                <span>Full-Stack Developer</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Technologies</span>
-                                <span>React, NestJS, MongoDB, Tesseract OCR</span>
-                            </div>
-                        </div>
-
-                        <p class="project-note">
-                            Optimized for supported structured layouts, with strong extraction accuracy on target formats.
-                            Comparison accuracy still depends on OCR quality, scan clarity, and document consistency.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Authflow js -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <a href="https://thedigitalbalkar.github.io/AuthFlow-JS/" target="_blank" rel="noopener noreferrer"
-                            aria-label="Open AuthFlow JS live project">
-                            <img src="imgs/Authflow js.png" alt="Authflow js">
-                        </a>
-                    </div>
-
-                    <div class="project-details">
-                        <h3>Authflow js</h3>
-
-                        <p>
-                            AuthFlow JS is a front-end authentication project built using HTML, CSS, and JavaScript. It demonstrates a complete user flow including signup, login, session-based authentication, protected routes, and logout functionality using localStorage and sessionStorage. The project focuses on clean UI state management, real-world authentication logic, and a structured multi-page flow, making it a solid demonstration of practical JavaScript fundamentals.
-                        </p>
-
-                        <div class="project-info">
-                            <div class="info-row">
-                                <span>Year</span>
-                                <span>2026</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Role</span>
-                                <span>Frontend Developer</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Technologies</span>
-                                <span>HTML, CSS, JavaScript</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/thedigitalbalkar/AuthFlow-JS" target="_blank" rel="noopener noreferrer" class="project-link">
-                            View GitHub <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- login form -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank" rel="noopener noreferrer">
-                            <img src="imgs/loginform.png" alt="login-form">
-                        </a>
-                    </div>
-
-                    <div class="project-details">
-                        <h3>Login Form</h3>
-
-                        <p>
-                            A simple and responsive login form with a clean layout and intuitive design.
-                        </p>
-
-                        <div class="project-info">
-                            <div class="info-row">
-                                <span>Year</span>
-                                <span>2025</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Role</span>
-                                <span>Frontend Developer</span>
-                            </div>
-                            <div class="info-row">
-                                <span>Technologies</span>
-                                <span>HTML, CSS</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/thedigitalbalkar/Login-page-1" target="_blank" rel="noopener noreferrer" class="project-link">
-                            View GitHub <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-section">
-                <div class="about-heading">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-content">
-                    <h3>I create responsive websites that are clean, practical, and easy to use.</h3>
-                    <p>
-                        I am an aspiring developer with a strong foundation built on over 3 years of experience in
-                        digital marketing and team leadership. This background has equipped me with a deep
-                        understanding of problem-solving, strategic thinking, and collaboration, allowing me to approach
-                        development with both technical focus and real-world perspective.
-                    </p>
-                    <p class="about-highlight">Currently focused on frontend roles, freelance work, and building projects that show strong UI structure and real-world usability.</p>
-                    <a href="about.html">More About Me</a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer-section">
-            <div class="footer-wrapper">
-                <div class="footer-info">
-
-                    <div class="footer-contact">
-
-                        <h2>LET'S CONNECT</h2>
-                        <p>Say hello to <a href="mailto:balkarsing2114@gmail.com">balkarsingh2114@gmail.com</a></p>
-                        <p>for more info, here's my <a href="Balkar singh.docx" download>resume</a></p>
-                        <p>Based in India and open to remote opportunities.</p>
-
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/thedigitalbalkar" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/balkar-s-643640198/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag==" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/xykyyjby" method="POST">
-
-                        <div class="form-group">
-                            <label for="contact-name">Name</label>
-                            <input type="text" id="contact-name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-email">Email</label>
-                            <input type="email" id="contact-email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-subject">Subject</label>
-                            <input type="text" id="contact-subject" name="subject">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-message">Message</label>
-                            <textarea id="contact-message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit">SUBMIT</button>
-                    </form>
-                </div>
-
-
+              </div>
             </div>
-            <div class="copyright">
-                <p>&copy;2026 Balkar Singh</p>
+            <div class="home-image">
+              <img src="dp/DP.jpg" alt="Balkar Singh" />
             </div>
-        </footer>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="section-header">
+            <h3>FEATURED PROJECTS</h3>
+            <p>Here are some of my recent projects:</p>
+          </div>
+
+          <!-- Extractify -->
+          <div class="project-item">
+            <div class="project-image">
+              <a href="#" aria-label="Extractify project preview">
+                <img
+                  src="imgs/extractify2.png"
+                  alt="Extractify PDF data extraction tool"
+                />
+              </a>
+            </div>
+
+            <div class="project-details">
+              <h3>Extractify</h3>
+
+              <p>
+                Extractify is a full-stack OCR-based application that extracts
+                ordered person records from PDFs and images, then compares two
+                documents to identify matching names. It includes structured
+                parsing, CSV export, background processing for large files, and
+                a responsive interface for handling extraction workflows.
+              </p>
+
+              <div class="project-info">
+                <div class="info-row">
+                  <span>Year</span>
+                  <span>2026</span>
+                </div>
+                <div class="info-row">
+                  <span>Role</span>
+                  <span>Full-Stack Developer</span>
+                </div>
+                <div class="info-row">
+                  <span>Technologies</span>
+                  <span>React, NestJS, MongoDB, Tesseract OCR</span>
+                </div>
+              </div>
+
+              <p class="project-note">
+                Optimized for supported structured layouts, with strong
+                extraction accuracy on target formats. Comparison accuracy still
+                depends on OCR quality, scan clarity, and document consistency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Authflow js -->
+          <div class="project-item">
+            <div class="project-image">
+              <a
+                href="https://thedigitalbalkar.github.io/AuthFlow-JS/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open AuthFlow JS live project"
+              >
+                <img src="imgs/Authflow js.png" alt="Authflow js" />
+              </a>
+            </div>
+
+            <div class="project-details">
+              <h3>Authflow js</h3>
+
+              <p>
+                AuthFlow JS is a front-end authentication project built using
+                HTML, CSS, and JavaScript. It demonstrates a complete user flow
+                including signup, login, session-based authentication, protected
+                routes, and logout functionality using localStorage and
+                sessionStorage. The project focuses on clean UI state
+                management, real-world authentication logic, and a structured
+                multi-page flow, making it a solid demonstration of practical
+                JavaScript fundamentals.
+              </p>
+
+              <div class="project-info">
+                <div class="info-row">
+                  <span>Year</span>
+                  <span>2026</span>
+                </div>
+                <div class="info-row">
+                  <span>Role</span>
+                  <span>Frontend Developer</span>
+                </div>
+                <div class="info-row">
+                  <span>Technologies</span>
+                  <span>HTML, CSS, JavaScript</span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/thedigitalbalkar/AuthFlow-JS"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- login form -->
+          <div class="project-item">
+            <div class="project-image">
+              <a
+                href="https://github.com/thedigitalbalkar/Login-page-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="imgs/loginform.png" alt="login-form" />
+              </a>
+            </div>
+
+            <div class="project-details">
+              <h3>Login Form</h3>
+
+              <p>
+                A simple and responsive login form with a clean layout and
+                intuitive design.
+              </p>
+
+              <div class="project-info">
+                <div class="info-row">
+                  <span>Year</span>
+                  <span>2025</span>
+                </div>
+                <div class="info-row">
+                  <span>Role</span>
+                  <span>Frontend Developer</span>
+                </div>
+                <div class="info-row">
+                  <span>Technologies</span>
+                  <span>HTML, CSS</span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/thedigitalbalkar/Login-page-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <div class="about-heading">
+            <h2>About Me</h2>
+          </div>
+          <div class="about-content">
+            <h3>
+              I create responsive websites that are clean, practical, and easy
+              to use.
+            </h3>
+            <p>
+              I am an aspiring developer with a strong foundation built on over
+              five years of experience in business development and team
+              leadership. This background has equipped me with a deep
+              understanding of problem-solving, strategic thinking, and
+              collaboration, allowing me to approach development with both
+              technical focus and real-world business perspective.
+            </p>
+            <p class="about-highlight">
+              Currently focused on frontend roles, freelance work, and building
+              projects that show strong UI structure and real-world usability.
+            </p>
+            <a href="about.html">More About Me</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-section">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <div class="footer-contact">
+              <h2>LET'S CONNECT</h2>
+              <p>
+                Say hello to
+                <a href="mailto:balkarsing2114@gmail.com"
+                  >balkarsingh2114@gmail.com</a
+                >
+              </p>
+              <p>
+                for more info, here's my
+                <a href="Balkar singh.docx" download>resume</a>
+              </p>
+              <p>Based in India and open to remote opportunities.</p>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/thedigitalbalkar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open GitHub profile"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/balkar-s-643640198/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open LinkedIn profile"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/only1_balkar?igsh=MTA1YnJyMzdybm0wag=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Instagram profile"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xykyyjby" method="POST">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy;2026 Balkar Singh</p>
+        </div>
+      </footer>
     </div>
 
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
